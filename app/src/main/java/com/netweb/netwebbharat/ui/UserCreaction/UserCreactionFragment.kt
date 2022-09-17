@@ -1,4 +1,4 @@
-package com.netweb.netwebbharat.UserCreaction
+package com.netweb.netwebbharat.ui.UserCreaction
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

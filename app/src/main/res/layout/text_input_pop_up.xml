@@ -155,7 +155,7 @@
             android:background="@drawable/background"
             android:text="@string/verify_mpin"
             android:textColor="@color/white"
-            android:layout_marginBottom="@dimen/_13sdp"
+            android:layout_marginBottom="13dp"
             android:textStyle="bold" />
 
     </LinearLayout>
