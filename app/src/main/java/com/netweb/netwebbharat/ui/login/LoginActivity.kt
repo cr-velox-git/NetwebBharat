@@ -1,4 +1,4 @@
-package com.example.netwebbharat.Activity
+package com.netweb.netwebbharat.ui.login
 
 import android.content.DialogInterface
 import android.content.Intent
@@ -11,6 +11,7 @@ import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import com.netweb.netwebbharat.R
+import com.netweb.netwebbharat.ui.forgetpassword.ForgetPasswordActivity
 
 class LoginActivity : AppCompatActivity() {
 
@@ -39,7 +40,7 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun fogetPassword() {
-        intent=Intent(this,Forget_password_Activity::class.java)
+        intent=Intent(this, ForgetPasswordActivity::class.java)
         startActivity(intent)
     }
 

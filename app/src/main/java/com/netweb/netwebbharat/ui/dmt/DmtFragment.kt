@@ -1,4 +1,4 @@
-package com.netweb.netwebbharat.DMT
+package com.netweb.netwebbharat.ui.dmt
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

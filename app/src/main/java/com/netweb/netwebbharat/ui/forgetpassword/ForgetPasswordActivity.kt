@@ -1,12 +1,12 @@
-package com.netweb.netwebbharat.MATM
+package com.netweb.netwebbharat.ui.forgetpassword
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.netweb.netwebbharat.R
 
-class TransactionActivity : AppCompatActivity() {
+class ForgetPasswordActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_transaction)
+        setContentView(R.layout.activity_forget_password)
     }
 }

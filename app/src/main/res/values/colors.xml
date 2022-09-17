@@ -17,4 +17,5 @@
     <color name="text_color">#060606</color>
     <color name="calendar_text_unselectable">#7f778088</color>
     <color name="green">#07c700</color>
+    <color name="transparent">#00C70000</color>
 </resources>

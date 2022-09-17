@@ -14,7 +14,7 @@
         android:theme="@style/Theme.NetwebBharat"
         tools:targetApi="31">
         <activity
-            android:name=".MATM.TransactionActivity"
+            android:name=".ui.transaction.TransactionActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
