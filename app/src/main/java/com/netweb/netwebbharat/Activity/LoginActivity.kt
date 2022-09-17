@@ -10,8 +10,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
-import androidx.fragment.app.Fragment
-import com.example.netwebbharat.R
+import com.netweb.netwebbharat.R
 
 class LoginActivity : AppCompatActivity() {
 
@@ -55,6 +54,11 @@ class LoginActivity : AppCompatActivity() {
         val bt_input3 = findViewById<EditText>(R.id.inputCode3)
         val bt_input4 = findViewById<EditText>(R.id.inputCode4)
         val bt_verify = findViewById<Button>(R.id.buttonVerify)
+        val forgot_Mpin_TextView=findViewById<TextView>(R.id.textResendOTP)
+
+        forgot_Mpin_TextView.setOnClickListener{
+            forgotMpin()
+        }
 
 
         val dialogBuilder: AlertDialog.Builder = AlertDialog.Builder(this)
@@ -70,6 +74,9 @@ class LoginActivity : AppCompatActivity() {
         alertDialog.show()
     }
 
+    private fun forgotMpin() {
+
+    }
 
 /*
     private fun showCustomDialog_forget_password() {
