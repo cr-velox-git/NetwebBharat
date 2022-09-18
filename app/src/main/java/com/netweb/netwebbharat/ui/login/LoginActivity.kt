@@ -29,7 +29,6 @@ class LoginActivity : BaseActivity() {
 
         setContentView(binding.root)
 
-
 //        var et_username = findViewById(R.id.user_name) as EditText
 //        var et_password = findViewById(R.id.password) as EditText
         var btn_submit = findViewById<Button>(R.id.submit)
@@ -40,7 +39,6 @@ class LoginActivity : BaseActivity() {
             /*   val intent = Intent(this, MainActivity::class.java)
                startActivity(intent)*/
             finish()
-
         }
         tv_forget_password.setOnClickListener {
             fogetPassword()
