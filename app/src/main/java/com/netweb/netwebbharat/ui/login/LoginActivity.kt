@@ -18,7 +18,7 @@ import com.netweb.netwebbharat.ui.forgetpassword.ForgetPasswordActivity
 
 class LoginActivity : BaseActivity() {
 
-    private lateinit var binding : ActivityLoginBinding
+    private lateinit var binding: ActivityLoginBinding
     private lateinit var alertDialog: AlertDialog
     private lateinit var forgetEmil_alertDialog: AlertDialog
 
@@ -33,26 +33,24 @@ class LoginActivity : BaseActivity() {
 //        var et_username = findViewById(R.id.user_name) as EditText
 //        var et_password = findViewById(R.id.password) as EditText
         var btn_submit = findViewById<Button>(R.id.submit)
-//        var tv_forget_password = findViewById<TextView>(R.id.forgotPassword)
-//
+        var tv_forget_password = findViewById<TextView>(R.id.forgotPassword)
+
         btn_submit.setOnClickListener {
-//            login()
-//            showCustomDialog_mpin()
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
+            showCustomDialog_mpin()
+            /*   val intent = Intent(this, MainActivity::class.java)
+               startActivity(intent)*/
             finish()
 
         }
-//        tv_forget_password.setOnClickListener{
-//            fogetPassword()
-//        }
-
+        tv_forget_password.setOnClickListener {
+            fogetPassword()
+        }
 
 
     }
 
     private fun fogetPassword() {
-        intent=Intent(this, ForgetPasswordActivity::class.java)
+        intent = Intent(this, ForgetPasswordActivity::class.java)
         startActivity(intent)
     }
 
@@ -61,19 +59,18 @@ class LoginActivity : BaseActivity() {
         val inflater: LayoutInflater = this.getLayoutInflater()
         val dialogView: View = inflater.inflate(R.layout.text_input_pop_up, null)
 
-
         val bt_input1 = findViewById<EditText>(R.id.inputCode1)
         val bt_input2 = findViewById<EditText>(R.id.inputCode2)
         val bt_input3 = findViewById<EditText>(R.id.inputCode3)
         val bt_input4 = findViewById<EditText>(R.id.inputCode4)
-        val bt_verify = findViewById<Button>(R.id.buttonVerify)
-        val forgot_Mpin_TextView=findViewById<TextView>(R.id.textResendOTP)
 
-        forgot_Mpin_TextView.setOnClickListener{
-            forgotMpin()
+        val bt_verify = dialogView.findViewById<Button>(R.id.buttonVerify)
+        val forgot_Mpin_TextView = findViewById<TextView>(R.id.forgot_Mpin)
+
+        bt_verify.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
         }
-
-
         val dialogBuilder: AlertDialog.Builder = AlertDialog.Builder(this)
         dialogBuilder.setOnDismissListener(object : DialogInterface.OnDismissListener {
             override fun onDismiss(arg0: DialogInterface) {
@@ -86,32 +83,6 @@ class LoginActivity : BaseActivity() {
 //        alertDialog.window!!.getAttributes().windowAnimations = R.style.PauseDialogAnimation
         alertDialog.show()
     }
-
-    private fun forgotMpin() {
-
-    }
-
-/*
-    private fun showCustomDialog_forget_password() {
-        val inflater: LayoutInflater = this.getLayoutInflater()
-        val forgetEmai_dialogView: View = inflater.inflate(R.layout.forget_password, null)
-
-        val ed_Email = findViewById<EditText>(R.id.editText_Email)
-        val bt_submit = findViewById<Button>(R.id.bt_Submit)
-
-        val dialogBuilder: AlertDialog.Builder = AlertDialog.Builder(this)
-        dialogBuilder.setOnDismissListener(object : DialogInterface.OnDismissListener {
-            override fun onDismiss(arg0: DialogInterface) {
-
-            }
-        })
-        dialogBuilder.setView(forgetEmai_dialogView)
-
-        forgetEmil_alertDialog = dialogBuilder.create();
-//        alertDialog.window!!.getAttributes().windowAnimations = R.style.PauseDialogAnimation
-        forgetEmil_alertDialog.show()
-    }
-*/
 
     private fun login() {
     }
