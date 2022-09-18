@@ -13,8 +13,8 @@ import com.netweb.netwebbharat.databinding.FragmentDashboardBinding
 class DashboardFragment : Fragment() {
 
     private var _binding: FragmentDashboardBinding? = null
-
     private val binding get() = _binding!!
+
     lateinit var dashboardViewModel: DashboardViewModel
 
     override fun onCreateView(

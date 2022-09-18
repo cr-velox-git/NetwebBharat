@@ -7,13 +7,13 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-    <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
+
     <string name="forgotpassword">forgotpassword</string>
     <string name="login">Login</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="enter_the_otp">Enter The OTP</string>
     <string name="resend_otp">Forgot MPIN</string>
     <string name="verify_mpin">VERIFY MPIN</string>
+    <string name="openDrawer">Open Drawer </string>
+    <string name="closeDrawer">Close Drawer </string>
 </resources>

@@ -1,12 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:showIn="navigation_view">
+    tools:showIn="navigation_view"
+    >
 
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_dashboard"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="@string/menu_home" />
+            android:title="Dashboard" />
+
+        <item
+            android:id="@+id/nav_account_details"
+            android:title="Account Details" />
+
+        <item
+            android:id="@+id/nav_change_password"
+            android:title="Change Password" />
+
+        <item
+            android:id="@+id/nav_reset_trans_pin"
+            android:title="Reset Transaction Pin" />
+
+        <item
+            android:id="@+id/nav_create_use"
+            android:title="User Creation" />
+
+        <item
+            android:id="@+id/nav_manage_user"
+            android:title="Manage User" />
+
+        <item
+            android:id="@+id/nav_acount_activation"
+            android:title="Account Activation " />
+        <item
+            android:id="@+id/nav_wallet_request"
+            android:title="Wallet Request" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:title="Logout" />
+
+        <item
+            android:id="@+id/nav_certificate"
+            android:title="Certificate" />
     </group>
 </menu>

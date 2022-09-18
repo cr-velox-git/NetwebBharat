@@ -10,32 +10,42 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
+import com.netweb.netwebbharat.MainActivity
 import com.netweb.netwebbharat.R
+import com.netweb.netwebbharat.databinding.ActivityLoginBinding
 import com.netweb.netwebbharat.ui.forgetpassword.ForgetPasswordActivity
 
 class LoginActivity : AppCompatActivity() {
 
+    private lateinit var binding : ActivityLoginBinding
     private lateinit var alertDialog: AlertDialog
     private lateinit var forgetEmil_alertDialog: AlertDialog
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login)
+
+        binding = ActivityLoginBinding.inflate(layoutInflater)
+
+        setContentView(binding.root)
 
 
-        var et_username = findViewById(R.id.user_name) as EditText
-        var et_password = findViewById(R.id.password) as EditText
-        var btn_submit = findViewById(R.id.submit) as Button
-        var tv_forget_password = findViewById<TextView>(R.id.forgotPassword)
-
+//        var et_username = findViewById(R.id.user_name) as EditText
+//        var et_password = findViewById(R.id.password) as EditText
+        var btn_submit = findViewById<Button>(R.id.submit)
+//        var tv_forget_password = findViewById<TextView>(R.id.forgotPassword)
+//
         btn_submit.setOnClickListener {
-            login()
-            showCustomDialog_mpin()
+//            login()
+//            showCustomDialog_mpin()
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
 
         }
-        tv_forget_password.setOnClickListener{
-            fogetPassword()
-        }
+//        tv_forget_password.setOnClickListener{
+//            fogetPassword()
+//        }
+
+
 
     }
 
