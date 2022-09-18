@@ -10,12 +10,13 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
+import com.netweb.netwebbharat.BaseActivity
 import com.netweb.netwebbharat.MainActivity
 import com.netweb.netwebbharat.R
 import com.netweb.netwebbharat.databinding.ActivityLoginBinding
 import com.netweb.netwebbharat.ui.forgetpassword.ForgetPasswordActivity
 
-class LoginActivity : AppCompatActivity() {
+class LoginActivity : BaseActivity() {
 
     private lateinit var binding : ActivityLoginBinding
     private lateinit var alertDialog: AlertDialog
@@ -39,6 +40,7 @@ class LoginActivity : AppCompatActivity() {
 //            showCustomDialog_mpin()
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
+            finish()
 
         }
 //        tv_forget_password.setOnClickListener{

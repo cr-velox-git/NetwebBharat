@@ -3,6 +3,7 @@ package com.netweb.netwebbharat
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import androidx.core.view.forEach
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
@@ -33,6 +34,9 @@ class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedList
 
         setSupportActionBar(binding.appBarMain.toolbar)
 
+        navView.menu.forEach { item ->
+            //todo
+        }
 
         navView.menu.findItem(R.id.nav_manage_user).isVisible = false
         // Passing each menu ID as a set of Ids because each
@@ -69,13 +73,19 @@ class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedList
             R.id.nav_dashboard -> {}
             R.id.nav_create_use -> {
                 findNavController(R.id.nav_host_fragment_content_main).navigate(R.id.action_nav_dashboard_to_userCreactionFragment)
-                drawerLayout.close()
+            }
+            R.id.nav_change_password -> {
+                findNavController(R.id.nav_host_fragment_content_main).navigate(R.id.action_nav_dashboard_to_changePasswordFragment)
+            }
+            R.id.nav_acount_activation -> {
+                findNavController(R.id.nav_host_fragment_content_main).navigate(R.id.action_nav_dashboard_to_dmtFragment)
+
             }
             R.id.nav_logout -> {
                 finish()
             }
         }
-
+        drawerLayout.close()
         return true
     }
 

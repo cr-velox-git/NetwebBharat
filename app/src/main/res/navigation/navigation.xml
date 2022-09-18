@@ -13,10 +13,25 @@
         <action
             android:id="@+id/action_nav_dashboard_to_userCreactionFragment"
             app:destination="@id/userCreactionFragment" />
+        <action
+            android:id="@+id/action_nav_dashboard_to_changePasswordFragment"
+            app:destination="@id/changePasswordFragment" />
+        <action
+            android:id="@+id/action_nav_dashboard_to_dmtFragment"
+            app:destination="@id/dmtFragment" />
     </fragment>
     <fragment
         android:id="@+id/userCreactionFragment"
         android:name="com.netweb.netwebbharat.ui.usercreation.UserCreationFragment"
         android:label="UserCreactionFragment" />
+    <fragment
+        android:id="@+id/changePasswordFragment"
+        android:name="com.netweb.netwebbharat.ui.changepassword.ChangePasswordFragment"
+        android:label="fragment_change_password"
+        tools:layout="@layout/fragment_change_password" />
+    <fragment
+        android:id="@+id/dmtFragment"
+        android:name="com.netweb.netwebbharat.ui.dmt.DmtFragment"
+        android:label="DmtFragment" />
 
 </navigation>
