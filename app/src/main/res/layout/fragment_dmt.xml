@@ -1,694 +1,301 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/linearlayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="10dp"
-    android:visibility="visible"
-    android:windowSoftInputMode="adjustPan">
+    android:background="@color/common_background">
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="Information"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/dark_sky"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView25">
+
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView15"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/textView17"
+            app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textView19"
+            app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView21"
+            app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="TextView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView23"
+            app:layout_constraintTop_toBottomOf="@+id/textView22" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Money Transfer Break up"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout4" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/dark_sky"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView26">
+
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView36"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView35"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView37"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView35" />
+
+        <TextView
+            android:id="@+id/textView38"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/textView35"
+            app:layout_constraintTop_toBottomOf="@+id/textView36" />
+
+        <TextView
+            android:id="@+id/textView39"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView37" />
+
+        <TextView
+            android:id="@+id/textView40"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textView39"
+            app:layout_constraintTop_toBottomOf="@+id/textView38" />
+
+        <TextView
+            android:id="@+id/textView41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView39" />
+
+        <TextView
+            android:id="@+id/textView42"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView41"
+            app:layout_constraintTop_toBottomOf="@+id/textView40" />
+
+        <TextView
+            android:id="@+id/textView43"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView41" />
+
+        <TextView
+            android:id="@+id/textView44"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="TextView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView43"
+            app:layout_constraintTop_toBottomOf="@+id/textView42" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
 
-    <androidx.core.widget.NestedScrollView
-        android:id="@+id/nestedScrollview"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scrollbars="none">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:visibility="visible">
-
-
-                <HorizontalScrollView
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:layout_marginBottom="10dp"
-                    android:minHeight="160dp"
-                    android:scrollbars="none"
-                    tools:ignore="SpeakableTextPresentCheck">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-
-                        <ImageView
-                            android:layout_width="240dp"
-                            android:layout_height="100dp"
-                            android:layout_marginRight="8dp"
-                            android:background="@drawable/ic_dmt_banner_one" />
-
-                        <ImageView
-                            android:layout_width="240dp"
-                            android:layout_height="100dp"
-                            android:background="@drawable/ic_dmt_banner_two" />
-
-                    </LinearLayout>
-                </HorizontalScrollView>
-            </RelativeLayout>
-
-            <!--Sender Module-->
-            <LinearLayout
-                android:id="@+id/ll_main_sender"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Sender"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:visibility="gone" />
-
-                <EditText
-                    android:id="@+id/mobile_number"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:drawableLeft="@drawable/ic_baseline_phone_iphone_24"
-                    android:drawablePadding="6dp"
-                    android:hint="Enter Your Mobile Number * "
-                    android:inputType="number"
-                    android:maxLength="10"
-                    android:padding="12sp"
-                    android:textColor="@color/black"
-                    android:textColorHint="#BBC0C1" />
-
-
-                <TextView
-                    android:id="@+id/customer_name_warning"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="15dp"
-                    android:text="* Only alphabets are allowed. Numbers, special characters and trivial names like aaa, cba or abc are not allowed."
-                    android:textColor="@color/red"
-                    android:textSize="10dp"
-                    android:visibility="gone" />
-
-
-                <!--Button Register-->
-                <Button
-                    android:id="@+id/btn_register"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="24dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/btn_bg_active"
-                    android:foreground="?android:attr/selectableItemBackground"
-                    android:text="Register"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                    android:textColor="@color/white"
-                    android:textSize="14sp"
-                    android:visibility="gone" />
-
-                <!--Button Transfer, Refund-->
-                <LinearLayout
-                    android:id="@+id/ll_btn_transfer_refund"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="24dp"
-                    android:orientation="horizontal"
-                    android:visibility="gone">
-
-                    <TextView
-                        android:id="@+id/btn_transfer"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginRight="8dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/bt_bg_inactive"
-                        android:foreground="?android:attr/selectableItemBackground"
-                        android:gravity="center"
-                        android:paddingTop="8dp"
-                        android:paddingBottom="8dp"
-                        android:text="Transfer"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                        android:textColor="?attr/colorPrimary"
-                        android:textSize="14sp" />
-
-                    <TextView
-                        android:id="@+id/btn_refund"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="8dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/btn_bg_active"
-                        android:foreground="?android:attr/selectableItemBackground"
-                        android:gravity="center"
-                        android:paddingTop="8dp"
-                        android:paddingBottom="8dp"
-                        android:text="Refund"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                        android:textColor="@color/white"
-                        android:textSize="14sp" />
-
-                </LinearLayout>
-
-                <!--OTP/Verify button/Resend OTP-->
-                <LinearLayout
-                    android:id="@+id/ll_otp_verify_resend"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:orientation="vertical"
-                    android:visibility="gone">
-
-
-                    <EditText
-                        android:id="@+id/otp"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="Enter the OTP * "
-                        android:inputType="number"
-                        android:maxLength="6"
-                        android:padding="14dp" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:text="Enter the OTP sent to your mobile number"
-                        android:textColor="@color/text_color"
-                        android:textSize="12sp" />
-
-                    <TextView
-                        android:id="@+id/tv_resend_otp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="end"
-                        android:layout_marginTop="10dp"
-                        android:padding="8dp"
-                        android:text="Resend OTP"
-                        android:textColor="@color/black"
-                        android:textSize="12sp" />
-
-                    <Button
-                        android:id="@+id/btn_verify"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="24dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/btn_bg_active"
-                        android:foreground="?android:attr/selectableItemBackground"
-                        android:text="Verify"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                        android:textColor="@color/white"
-                        android:textSize="14sp" />
-
-                </LinearLayout>
-
-            </LinearLayout>
-
-            <!--Beneficiary Module-->
-            <LinearLayout
-                android:id="@+id/ll_main_recipient"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
-                android:orientation="vertical"
-                android:visibility="visible">
-
-                <RelativeLayout
-                    android:id="@+id/search_lyt"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Beneficiary"
-                        android:textColor="@color/text_color"
-                        android:textSize="20sp"
-                        android:textStyle="bold" />
-
-                    <LinearLayout
-                        android:id="@+id/ll_add_new_bene_option"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentRight="true"
-                        android:layout_marginTop="8dp"
-                        android:gravity="end"
-                        android:orientation="horizontal">
-
-                        <ImageView
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
-                            android:layout_gravity="center_vertical"
-                            android:layout_marginRight="8dp"
-                            android:adjustViewBounds="true"
-                            android:background="@drawable/round_bt"
-                            android:src="@drawable/ic_baseline_person_24"
-                            android:visibility="visible"
-                            app:tint="@color/black" />
-
-                    </LinearLayout>
-
-                </RelativeLayout>
-
-                <androidx.appcompat.widget.SearchView
-                    android:id="@+id/search_view"
-                    android:layout_width="wrap_content"
-                    android:layout_height="30dp"
-                    android:layout_gravity="end"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginRight="8dp"
-                    android:background="@drawable/round_bt" />
-
-                <RelativeLayout
-                    android:id="@+id/rl_search_bene"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="12sp"
-                    android:layout_marginBottom="8dp"
-                    android:visibility="gone">
-
-                    <EditText
-                        android:id="@+id/et_search_bene"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/bt_bg_disable"
-                        android:hint="Search Beneficiary"
-                        android:padding="8dp"
-                        android:textColor="@color/text_color" />
-
-                    <ImageView
-                        android:id="@+id/iv_clear_search"
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="8dp"
-                        android:adjustViewBounds="true"
-                        android:src="@drawable/ic_clear"
-                        app:tint="@color/text_color" />
-
-                </RelativeLayout>
-
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/rv_bene_list"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-
-                <!--Selected Beneficiary-->
-                <LinearLayout
-                    android:id="@+id/ll_main_selected_bene"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:visibility="visible">
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="10dp"
-                            android:text="Selected Beneficiary"
-                            android:textColor="@color/text_color"
-                            android:textSize="12sp" />
-
-                        <ImageView
-                            android:id="@+id/iv_reset_selected_bene_details"
-                            android:layout_width="24dp"
-                            android:layout_height="24dp"
-                            android:layout_alignParentRight="true"
-                            android:layout_centerVertical="true"
-                            android:layout_marginRight="8dp"
-                            android:adjustViewBounds="true"
-                            android:src="@drawable/ic_close"
-                            app:tint="@color/text_color" />
-                    </RelativeLayout>
-
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginTop="4dp"
-                        android:layout_marginRight="8dp"
-                        android:layout_marginBottom="12sp"
-                        app:cardBackgroundColor="#EEF9F9">
-
-                        <RelativeLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:padding="8dp">
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:orientation="vertical">
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:orientation="horizontal">
-
-                                    <TextView
-                                        android:id="@+id/name"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:ellipsize="end"
-
-                                        android:singleLine="true"
-                                        android:text="Prabhakar Panda"
-                                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                                        android:textColor="@color/text_color"
-                                        android:textSize="14sp"
-                                        android:textStyle="bold" />
-
-                                    <RelativeLayout
-                                        android:layout_width="20dp"
-                                        android:layout_height="20dp"
-                                        android:layout_gravity="end"
-                                        android:layout_marginLeft="8dp">
-
-                                        <ImageView
-                                            android:id="@+id/iv_verify_bene_bank"
-                                            android:layout_width="20dp"
-                                            android:layout_height="20dp"
-                                            android:src="@drawable/bank_green" />
-
-                                        <ImageView
-                                            android:id="@+id/iv_verify_bene_status"
-                                            android:layout_width="8dp"
-                                            android:layout_height="8dp"
-                                            android:layout_alignParentBottom="true"
-                                            android:src="@drawable/ic_success" />
-
-                                    </RelativeLayout>
-
-                                </LinearLayout>
-
-
-                                <TextView
-                                    android:id="@+id/bankName"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:text="IndusInd Bank (INDB0000035)"
-                                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
-                                    android:textColor="@color/text_color"
-                                    android:textSize="12sp" />
-
-                                <TextView
-                                    android:id="@+id/accountNo"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="4dp"
-                                    android:text="100054568692"
-                                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
-                                    android:textColor="@color/text_color"
-                                    android:textSize="12sp" />
-
-
-                            </LinearLayout>
-
-                        </RelativeLayout>
-
-                    </androidx.cardview.widget.CardView>
-
-                </LinearLayout>
-
-
-                <LinearLayout
-                    android:id="@+id/ll_add_new_beneficiary_fields"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:orientation="vertical">
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Create New Beneficiary"
-                            android:textColor="@color/text_color"
-                            android:textSize="16dp"
-                            android:textStyle="bold" />
-
-                        <ImageView
-                            android:id="@+id/iv_reset_bene_details"
-                            android:layout_width="24dp"
-                            android:layout_height="24dp"
-                            android:layout_alignParentRight="true"
-                            android:layout_centerVertical="true"
-                            android:layout_marginRight="8dp"
-                            android:adjustViewBounds="true"
-                            android:src="@drawable/ic_close"
-                            app:tint="@color/text_color" />
-
-                    </RelativeLayout>
-
-
-                    <EditText
-                        android:id="@+id/account_number"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:drawableLeft="@drawable/ic_mask_group_26"
-                        android:drawablePadding="6dp"
-                        android:hint="Account Number * "
-                        android:inputType="number"
-                        android:maxLength="20"
-                        android:padding="14dp"
-                        android:textColor="@color/black"
-                        android:textColorHint="#BBC0C1" />
-
-
-                    <android.widget.AutoCompleteTextView
-                        android:id="@+id/bank_name"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:drawableLeft="@drawable/bank"
-                        android:drawablePadding="6dp"
-                        android:hint="Bank Name * "
-                        android:inputType="textCapCharacters"
-                        android:padding="14dp"
-                        android:textColor="@color/black"
-                        android:textColorHint="#BBC0C1" />
-
-
-                    <EditText
-                        android:id="@+id/ifsc_code"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
-                        android:drawableLeft="@drawable/bank"
-                        android:drawablePadding="6dp"
-                        android:hint="IFSC code * "
-                        android:inputType="textCapCharacters"
-                        android:maxLength="11"
-                        android:padding="14dp"
-                        android:textColor="@color/black"
-                        android:textColorHint="#BBC0C1" />
-
-
-                    <EditText
-                        android:id="@+id/beneficiary_name"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
-                        android:drawableLeft="@drawable/ic_baseline_phone_iphone_24"
-                        android:drawablePadding="6dp"
-                        android:hint="Beneficiary Name * "
-                        android:inputType="text"
-                        android:maxLength="50"
-                        android:padding="14dp"
-                        android:textColor="@color/black"
-                        android:textColorHint="#BBC0C1" />
-
-                    <EditText
-                        android:id="@+id/recipient_mobile_number"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:drawableLeft="@drawable/ic_baseline_person_24"
-                        android:drawablePadding="6dp"
-                        android:hint="Mobile Number "
-                        android:inputType="number"
-                        android:maxLength="10"
-                        android:padding="14dp"
-                        android:textColor="@color/black"
-                        android:textColorHint="#BBC0C1" />
-
-
-                    <!--Verify, Add, Delete Bene-->
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="24dp"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:id="@+id/btn_verify_bene"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_marginRight="8dp"
-                            android:layout_weight="1"
-                            android:background="@drawable/bt_bg_inactive"
-                            android:foreground="?android:attr/selectableItemBackground"
-                            android:gravity="center"
-                            android:paddingTop="8dp"
-                            android:paddingBottom="8dp"
-                            android:text="Verify Bene"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                            android:textColor="?attr/colorPrimary"
-                            android:textSize="14sp" />
-
-                        <TextView
-                            android:id="@+id/btn_add_bene"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_marginLeft="8dp"
-                            android:layout_weight="1"
-                            android:background="@drawable/btn_bg_active"
-                            android:foreground="?android:attr/selectableItemBackground"
-                            android:gravity="center"
-                            android:paddingTop="8dp"
-                            android:paddingBottom="8dp"
-                            android:text="Add Bene"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                            android:textColor="@color/white"
-                            android:textSize="14sp" />
-
-                    </LinearLayout>
-
-                    <Button
-                        android:id="@+id/btn_skip_bene_quick_pay"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
-                        android:layout_marginBottom="16dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/btn_bg_active"
-                        android:foreground="?android:attr/selectableItemBackground"
-                        android:text="Quick Pay"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                        android:textColor="@color/white"
-                        android:textSize="14sp" />
-                </LinearLayout>
-            </LinearLayout>
-
-            <!--Transfer Module-->
-            <LinearLayout
-                android:id="@+id/ll_main_transfer"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="14dp"
-                android:focusable="true"
-                android:focusableInTouchMode="true"
-                android:orientation="vertical"
-                android:visibility="visible">
-
-                <EditText
-                    android:id="@+id/requested_amount"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:drawableLeft="@drawable/ic_path_1753"
-                    android:drawablePadding="6dp"
-                    android:hint="Amount * "
-                    android:inputType="number"
-                    android:maxLength="6"
-                    android:padding="14dp"
-                    android:textColor="@color/black"
-                    android:textColorHint="#BBC0C1" />
-
-
-                <TextView
-                    android:id="@+id/tv_available_balance"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:text="Available Limit:"
-                    android:textColor="@color/text_color"
-                    android:textSize="13sp" />
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="24dp"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/tv_select_imps"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginRight="8dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/bt_bg_inactive"
-                        android:foreground="?android:attr/selectableItemBackground"
-                        android:gravity="center"
-                        android:paddingTop="8dp"
-                        android:paddingBottom="8dp"
-                        android:text="IMPS"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                        android:textColor="?attr/colorPrimary"
-                        android:textSize="13sp" />
-
-                    <TextView
-                        android:id="@+id/tv_select_neft"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="8dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/bt_bg_inactive"
-                        android:foreground="?android:attr/selectableItemBackground"
-                        android:gravity="center"
-                        android:paddingTop="8dp"
-                        android:paddingBottom="8dp"
-                        android:text="NEFT"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                        android:textColor="?attr/colorPrimary"
-                        android:textSize="13sp" />
-
-                </LinearLayout>
-
-                <Button
-                    android:id="@+id/btn_quick_pay"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="24dp"
-                    android:layout_marginBottom="16dp"
-                    android:background="@drawable/btn_bg_active"
-                    android:foreground="?android:attr/selectableItemBackground"
-                    android:text="Quick Pay"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                    android:textColor="@color/white"
-                    android:textSize="14sp" />
-
-            </LinearLayout>
-        </LinearLayout>
-    </androidx.core.widget.NestedScrollView>
-
-</FrameLayout>
 
 
 

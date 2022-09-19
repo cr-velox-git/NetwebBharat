@@ -1,12 +1,12 @@
-package com.netweb.netwebbharat.ui.transaction
+package com.netweb.netwebbharat.ui.matm
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.netweb.netwebbharat.R
 
-class TransactionActivity : AppCompatActivity() {
+class MatmActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_transaction)
+        setContentView(R.layout.activity_matm)
     }
 }
