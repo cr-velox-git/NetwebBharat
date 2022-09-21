@@ -36,9 +36,9 @@ class LoginActivity : BaseActivity() {
         var tv_forget_password = findViewById<TextView>(R.id.forgotPassword)
 
         btn_submit.setOnClickListener {
-            showCustomDialog_mpin()
-            /*   val intent = Intent(this, MainActivity::class.java)
-               startActivity(intent)*/
+//            showCustomDialog_mpin()
+               val intent = Intent(this, MainActivity::class.java)
+               startActivity(intent)
             finish()
 
         }

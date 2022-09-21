@@ -77,9 +77,8 @@ class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedList
             R.id.nav_change_password -> {
                 findNavController(R.id.nav_host_fragment_content_main).navigate(R.id.action_nav_dashboard_to_changePasswordFragment)
             }
-            R.id.nav_acount_activation -> {
+            R.id.nav_account_activation -> {
                 findNavController(R.id.nav_host_fragment_content_main).navigate(R.id.action_nav_dashboard_to_dmtFragment)
-
             }
             R.id.nav_logout -> {
                 finish()

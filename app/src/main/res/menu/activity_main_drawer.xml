@@ -34,7 +34,7 @@
             android:title="Manage User" />
 
         <item
-            android:id="@+id/nav_acount_activation"
+            android:id="@+id/nav_account_activation"
             android:title="Account Activation " />
         <item
             android:id="@+id/nav_wallet_request"
